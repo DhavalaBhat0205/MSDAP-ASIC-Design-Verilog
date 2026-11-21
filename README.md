@@ -63,5 +63,3 @@ A waveform captured during the original project is shown below:
 ## Documentation and project context
 
 - [Final report — design specifications, block diagrams, RTL simulation, and synthesis](docs/Final_Project_Report.pdf)
-- [Final presentation](docs/Final_Presentation.pptx)
-- [Project notes and limitations](docs/PROJECT_NOTES.md)
