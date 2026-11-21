@@ -1,7 +1,5 @@
 # Mini Stereo Digital Audio Processor (MSDAP)
 
-**Master's ASIC Design project | EEDG 6306 | The University of Texas at Dallas | Spring 2023**
-
 **Repository prepared and maintained by:** Dhavala Bhat
 
 This project implements a **two-channel finite impulse response (FIR) audio processor** in Verilog. The architecture handles left and right audio streams on one design, using shift-and-add/subtract operations in place of general-purpose multipliers. The original course project covered RTL design, a simulation testbench, and logic synthesis with Synopsys Design Compiler.
@@ -69,9 +67,3 @@ A waveform captured during the original project is shown below:
 - [Final report — design specifications, block diagrams, RTL simulation, and synthesis](docs/Final_Project_Report.pdf)
 - [Final presentation](docs/Final_Presentation.pptx)
 - [Project notes and limitations](docs/PROJECT_NOTES.md)
-
-**Project context:** This repository is maintained by Dhavala Bhat. The original work was a joint course project; this repository does not claim sole authorship or assign individual contributions. Original RTL and testbench files are preserved as submitted. Student ID numbers were removed from the shared PDF and PPTX; path and hostname information was masked in the text reports.
-
-**Technology-library note:** The `18m.v` standard-cell model from the original archive includes an Artisan Components confidential/proprietary notice. It and the technology-dependent generated gate-level netlist are intentionally **not** included in this public-sharing package. Please confirm distribution permissions before making any technology-specific artifacts public.
-
-No open-source license is granted for this coursework. Obtain the necessary permissions from the original contributors before reusing or relicensing the source.
