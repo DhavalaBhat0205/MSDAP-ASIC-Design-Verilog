@@ -1,6 +1,4 @@
-# Mini Stereo Digital Audio Processor (MSDAP)
-
-**Repository prepared and maintained by:** Dhavala Bhat
+# Mini Stereo Digital Audio Processor (MSDAP) Design
 
 This project implements a **two-channel finite impulse response (FIR) audio processor** in Verilog. The architecture handles left and right audio streams on one design, using shift-and-add/subtract operations in place of general-purpose multipliers. The original course project covered RTL design, a simulation testbench, and logic synthesis with Synopsys Design Compiler.
 
