@@ -1,7 +1,5 @@
 # Project notes and limitations
 
-This repository is an organized record of the **Spring 2023** Master's ASIC Design course project, not a revised or recently reverified implementation.
-
 ## Original implementation
 
 - The 11 original Verilog files are preserved byte-for-byte: 10 RTL modules and `tb.v`.
@@ -18,9 +16,3 @@ This repository is an organized record of the **Spring 2023** Master's ASIC Desi
 - The original testbench records output data but does not contain an automated golden-reference comparison. Its `if (count==6394) $finish;` is inside a one-time initial block, so it does not implement a reliable completion trigger. A new wrapper supplies a termination condition for command-line use; this wrapper has not been tested here.
 - The tool-generated power report identifies unannotated primary-input/sequential activity, limiting the certainty of the power estimate.
 - No physical implementation files or independently verified post-route results were supplied in the archive. Do not describe this repository as a tapeout or completed RTL-to-GDSII flow.
-
-## Sharing and licensing
-
-The original archive contains an `18m.v` file with the wording **CONFIDENTIAL AND PROPRIETARY SOFTWARE OF ARTISAN COMPONENTS, INC.** That file is excluded, and its licensing rights have not been established. The DC gate-level netlist includes `` `include "18m.v" ``; it is also excluded from the public package. Both files remain only in the original user-provided ZIP.
-
-**Repository maintained by: Dhavala Bhat.** The original work was a collaborative course project. No open-source license is assumed or included, and the original files retain their archival attribution.
