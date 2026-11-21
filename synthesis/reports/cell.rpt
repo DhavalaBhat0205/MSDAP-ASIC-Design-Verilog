@@ -1,0 +1,51 @@
+ 
+****************************************
+Report : cell
+Design : top
+Version: O-2018.06-SP1
+Date   : Fri Apr 21 17:46:59 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+PISOL                     PISO_0                          4102.828814
+                                                                    h, n
+PISOR                     PISO_1                          4102.828814
+                                                                    h, n
+Sipo                      SIPO                            3962.336081
+                                                                    h, n
+U2                        OR2X2M          ss_1v62_125c    10.976000 
+addL                      adder_0                         5358.483267
+                                                                    h
+addR                      adder_1                         5358.483267
+                                                                    h
+alu_ctrl                  alu_controller                  13886.835239
+                                                                    h, n
+coeffL                    coeff_memory_0                  689389.378258
+                                                                    h, n
+coeffR                    coeff_memory_1                  689389.378258
+                                                                    h, n
+inL                       data_memory_0                   347724.065083
+                                                                    h, n
+inR                       data_memory_1                   347724.065083
+                                                                    h, n
+main_ctrl                 main_controller                 5606.540714
+                                                                    h, n
+rjL                       rj_memory_0                     21554.668470
+                                                                    h, n
+rjR                       rj_memory_1                     21554.668470
+                                                                    h, n
+shiftL                    shift_accumulator_0             3279.628826
+                                                                    h, n
+shiftR                    shift_accumulator_1             3279.628826
+                                                                    h, n
+--------------------------------------------------------------------------------
+Total 16 cells                                            2166284.793468
+1

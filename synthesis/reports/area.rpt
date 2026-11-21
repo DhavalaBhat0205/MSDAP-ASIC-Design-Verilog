@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : top
+Version: O-2018.06-SP1
+Date   : Fri Apr 21 17:46:54 2023
+****************************************
+
+Library(s) Used:
+
+    ss_1v62_125c (File: <TECH_LIB_PATH>/ss_1v62_125c.db)
+
+Number of ports:                         1906
+Number of nets:                         77371
+Number of cells:                        75258
+Number of combinational cells:          49651
+Number of sequential cells:             25574
+Number of macros/black boxes:               0
+Number of buf/inv:                      10344
+Number of references:                      16
+
+Combinational area:             602138.960743
+Buf/Inv area:                    90128.325022
+Noncombinational area:         1564145.832726
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:               2166284.793468
+Total area:                 undefined
+1

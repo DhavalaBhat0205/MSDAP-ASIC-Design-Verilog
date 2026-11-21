@@ -1,0 +1,84 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : top
+Version: O-2018.06-SP1
+Date   : Fri Apr 21 17:44:51 2023
+****************************************
+ 
+ # A fanout number of 1000 was used for high fanout net computations.
+ 
+Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
+Wire Load Model Mode: top
+ 
+  Startpoint: PISOR/OutReady_reg
+              (rising edge-triggered flip-flop clocked by Sclk)
+  Endpoint: OutReady (output port clocked by Dclk)
+  Path Group: Dclk
+  Path Type: max
+ 
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Sclk (rise edge)               14324.03   14324.03
+  clock network delay (ideal)              0.00   14324.03
+  PISOR/OutReady_reg/CK (DFFQX2M)          0.00 # 14324.03 r
+  PISOR/OutReady_reg/Q (DFFQX2M)           0.36   14324.39 f
+  PISOR/OutReady (PISO_1)                  0.00   14324.39 f
+  U2/Y (OR2X2M)                            0.18   14324.57 f
+  OutReady (out)                           0.00   14324.57 f
+  data arrival time                               14324.57
+ 
+  clock Dclk (rise edge)               14325.85   14325.85
+  clock network delay (ideal)              0.00   14325.85
+  output external delay                   -1.00   14324.85
+  data required time                              14324.85
+  -----------------------------------------------------------
+  data required time                              14324.85
+  data arrival time                               -14324.57
+  -----------------------------------------------------------
+  slack (MET)                                         0.28
+ 
+ 
+  Startpoint: Sipo/in_flag_reg
+              (falling edge-triggered flip-flop clocked by Dclk)
+  Endpoint: main_ctrl/count_rj_reg[4]
+            (rising edge-triggered flip-flop clocked by Sclk)
+  Path Group: Sclk
+  Path Type: max
+ 
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Dclk (fall edge)                              22791.12   22791.12
+  clock network delay (ideal)                             0.00   22791.12
+  Sipo/in_flag_reg/CKN (DFFNSRHX8M)                       0.00   22791.12 f
+  Sipo/in_flag_reg/Q (DFFNSRHX8M)                         0.72   22791.84 r
+  Sipo/in_flag (SIPO)                                     0.00   22791.84 r
+  main_ctrl/in_flag (main_controller)                     0.00   22791.84 r
+  main_ctrl/U13/Y (NAND2X1M)                              0.19   22792.03 f
+  main_ctrl/U24/Y (INVX2M)                                0.12   22792.15 r
+  main_ctrl/U68/Y (NOR2BX2M)                              0.20   22792.35 r
+  main_ctrl/U29/Y (OAI2B1X2M)                             0.31   22792.66 r
+  main_ctrl/U37/Y (NOR2XLM)                               0.12   22792.78 f
+  main_ctrl/U25/Y (NOR2X2M)                               0.26   22793.03 r
+  main_ctrl/U64/Y (NAND2X2M)                              0.16   22793.20 f
+  main_ctrl/U5/Y (OAI2B2X1M)                              0.19   22793.39 r
+  main_ctrl/count_rj_reg[4]/D (DFFQX2M)                   0.00   22793.39 r
+  data arrival time                                              22793.39
+ 
+  clock Sclk (rise edge)                              22793.52   22793.52
+  clock network delay (ideal)                             0.00   22793.52
+  main_ctrl/count_rj_reg[4]/CK (DFFQX2M)                  0.00   22793.52 r
+  library setup time                                     -0.13   22793.39
+  data required time                                             22793.39
+  --------------------------------------------------------------------------
+  data required time                                             22793.39
+  data arrival time                                              -22793.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+ 
+ 
+
+***** End Of Report *****
